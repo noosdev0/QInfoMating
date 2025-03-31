@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<html>
+<script language=JavaScript>
+	function WriteEmail(email, host)
+		{
+		document.write ("<a href=" + "mail" + "to:" + email + "&#64" + host + ">")
+		document.write ("here"+"</a>")
+		return true
+		}
+</script>
+
+
+
+<head>
+<title> QInfoMating: Sexual selection and assortative mating estimation </title>
+  <meta http-equiv="Expires" content="0">
+  <meta http-equiv="Last-Modified" content="0">
+  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<META name="author" content="Antonio Carvajal-Rodríguez">
+<meta name="description" content="mate choice, assortative, jmating, infomating,qinfomating, akaike">
+<meta name="keywords" content="mate choice, assortative, jmating, QInfoMating, akaike">
+
+<meta name="Robots" content="all">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+<link rel="stylesheet" href="estilos/InfoMating_0823.css" type="text/css">
+</head>
+
+	
+<body>
+
+
+<div id="fondo">
+
+	<div id="cabecerasinfondo" class="fondoverdeclaro">
+
+<img src="./imagenes/InfoMatingHeader.jpg">
+
+	<p> &nbsp </p>
+	
+	<div class="h1grande azul">
+	QInfoMating: Sexual selection and assortative mating estimation
+	</div>
+	</div><!--close cabecerasinfondo-->
+
+
+	<div id="separador">
+	
+	</div>
+	
+	<div id="texto">
+		<div class="tituloseccion2">
+			Mate choice effects models
+		</div>
+
+		Given an encounter between an i-type female and a j-type male, let the probability of mating to depend on the mutual mating propensity m<sub>ij</sub>.
+		Therefore, the mating probability between types i and j is expressed as q'<sub>ij</sub> = m<sub>ij</sub>q<sub>ij</sub> 
+		where q<sub>ij</sub> is the encounter probability i.e. the product of the population female and male frequencies of each type (q<sub>ij</sub> = p<sub>1i</sub>xp<sub>2j</sub> = (n<sub>1i</sub>n<sub>2j</sub>) / (n<sub>1</sub>n<sub>2</sub>)
+		and n<sub>1i</sub> is the number of females of type i from the total of n<sub>1</sub> females in the population 
+		and n<sub>2j</sub> is the number of males j from n<sub>2</sub> males in the population). 
+		The values m<sub>ij</sub> are normalized so that the summatory q'<sub>ij</sub> = 1 (Carvajal-Rodriguez 2018).
+		<br><br>
+		Therefore, consider a sample of n' matings between different types of females and males. 
+		If there are k<sub>1</sub> types of females and k<sub>2</sub> types of males then the total number of possible matings is K = k<sub>1</sub> x k<sub>2</sub>. 
+		Let have a sample with n'<sub>ij</sub> matings of i type female with j type male. If the probability of the mating i x j is q'<sub>ij</sub>, 
+		the logarithm of the likelihood function of the sample is
+		
+	</div> <!-- close texto-->
+<div class="img-model">
+<img src="./imagenes/equation1.jpg">
+</div>
+	<div id="texto">
+
+		where C is the multinomial coefficient which is constant given the mating data. 
+		The maximum likelihood estimator (MLE) of the probability of the mating i &times; j is n'<sub>ij</sub> / n' 
+		and if we consider the population frequencies q<sub>ij</sub> as already known, then the MLE of m<sub>ij</sub> corresponds to the Pair Total Index PTI(i,j).
+		<br><br>
+		We say this model M<sub>sat</sub> is <strong>saturated</strong> because it has as many parameters as data categories in the sample 
+		i.e. it is the most complex model that can be fitted to the available data.
+		Interestingly, it is possible to show that the random mating model M<sub>0</sub> corresponds to M<sub>sat</sub> subjected to the following restrictions:
+		<br><br>
+		<ol>
+		<li> <strong> Multiplicative effects:</strong>  m<sub>ij</sub>= m<sub>Fem_ii</sub> &times; m<sub>Male_j</sub> for every i,j</li>
+		<li> <strong> Equal female marginals:</strong>  m<sub>Fem_i</sub> = m<sub>Fem_j</sub> for every i,j</li>
+		<li> <strong> Equal male marginals:</strong>  m<sub>Male_i</sub> = m<sub>Male_j</sub> for every i,j</li>
+		</ol>
+		<br>
+		It is useful to express the random mating model in such a way because we can generate particular models of interest by relaxing some of the conditions.
+<p> &nbsp </p>
+		</div> <!-- close texto-->
+<div class="img-models">
+		<p style="text-align:center;"> <img src="./imagenes/ModelScheme090219.jpg" ></p>
+</div>
+	
+	<div id="texto">
+		
+		<p>
+		Thus, we can develop a set of hypotheses corresponding to different mate choice and intrasexual competition effects 
+		and then using data-based evidence for ranking each hypothesis and perform multi-model-based inference. The QInfoMating program performs this task. 
+		</p>
+		<br>
+		
+	</div> <!-- close texto-->
+	
+	<div class="firma" id="siteInfo"> 
+	A. Carvajal-Rodriguez - Departamento de Bioqu&iacute;mica Gen&eacute;tica e Inmunolog&iacute;a - Universidad de Vigo. 
+      ( <em> Last update: August 2023)</em>
+    </div>
+    
+    <p>&nbsp;</p>
+    
+</div> <!--close fondo-->
+
+</body>
+
+
+
+</html>
